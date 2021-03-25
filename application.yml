@@ -1,0 +1,19 @@
+---
+spring:
+  profiles:
+    active:
+      - dev
+
+---
+spring:
+  profiles: dev # 开发环境
+  application:
+    name: microservice-cloud-config-fatehole-dev
+
+---
+spring:
+  profiles: test # 测试环境
+  application:
+    name: microservice-cloud-config-fatehole-test
+
+# 必须保存为UTF-8格式
